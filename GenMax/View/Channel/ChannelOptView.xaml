@@ -1,0 +1,111 @@
+﻿<UserControl
+    x:Class="GenMax.View.ChannelOptView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
+    xmlns:local="clr-namespace:GenMax.View"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    d:DesignHeight="450"
+    d:DesignWidth="800"
+    mc:Ignorable="d">
+    <Grid Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Border Margin="0,0,10,0">
+            <Button Command="{Binding InputCommand}">
+                <Button.Style>
+                    <Style TargetType="Button">
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding State}" Value="False">
+                                <Setter Property="Background">
+                                    <Setter.Value>
+                                        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                                            <GradientStop Offset="0" Color="#00BAFF" />
+                                            <GradientStop Offset="1" Color="#0063DA" />
+                                        </LinearGradientBrush>
+                                    </Setter.Value>
+                                </Setter>
+                                <Setter Property="Content">
+                                    <Setter.Value>
+                                        <iconPacks:PackIconMaterialDesign
+                                            Foreground="White"
+                                            Width="40"
+                                            Height="30"
+                                            Kind="Add" />
+                                    </Setter.Value>
+                                </Setter>
+                            </DataTrigger>
+                            <DataTrigger Binding="{Binding State}" Value="true">
+                                <Setter Property="Foreground" Value="Pink"/>
+                                <Setter Property="Content">
+                                    <Setter.Value>
+                                        <iconPacks:PackIconMaterialDesign
+                                            Width="40"
+                                            Height="30"
+                                            Kind="Stop" />
+                                    </Setter.Value>
+                                </Setter>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+            </Button>
+        </Border>
+        <Border Grid.Column="1" Margin="10,0,0,0">
+            <Button Background="White" Command="{Binding OptCommand}">
+                <Button.Style>
+                    <Style TargetType="Button">
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding IsPause}" Value="False">
+                                <Setter Property="Foreground">
+                                    <Setter.Value>
+                                        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                                            <GradientStop Offset="0" Color="#00BAFF" />
+                                            <GradientStop Offset="1" Color="#0063DA" />
+                                        </LinearGradientBrush>
+                                    </Setter.Value>
+                                </Setter>
+                                <Setter Property="Content">
+                                    <Setter.Value>
+                                        <iconPacks:PackIconFontisto
+                                            Width="40"
+                                            Height="30"
+                                            Kind="Play" />
+                                    </Setter.Value>
+                                </Setter>
+                            </DataTrigger>
+                            <DataTrigger Binding="{Binding IsPause}" Value="true">
+                                <Setter Property="Foreground" Value="Red"/>
+                                <Setter Property="Content">
+                                    <Setter.Value>
+                                        <iconPacks:PackIconFontisto
+                                            Width="40"
+                                            Height="30"
+                                            Kind="Pause" />
+                                    </Setter.Value>
+                                </Setter>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+
+
+                <!--<Button.Foreground>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                        <GradientStop Offset="0" Color="#00BAFF" />
+                        <GradientStop Offset="1" Color="#0063DA" />
+                    </LinearGradientBrush>
+                </Button.Foreground>
+                <Button.Content>
+                    <iconPacks:PackIconFontisto
+                        Width="40"
+                        Height="30"
+                        Kind="Play" />
+                </Button.Content>-->
+            </Button>
+        </Border>
+    </Grid>
+</UserControl>

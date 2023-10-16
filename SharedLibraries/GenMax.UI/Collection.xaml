@@ -1,0 +1,9 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="/GenMax.UI;component/Style/ButtonStyle.xaml" />
+        <ResourceDictionary Source="/GenMax.UI;component/Style/ListBoxStyle.xaml" />
+        <ResourceDictionary Source="/GenMax.UI;component/Style/PasswordBoxStyle.xaml" />
+        <ResourceDictionary Source="/GenMax.UI;component/Style/TextBlockStyle.xaml" />
+        <ResourceDictionary Source="/GenMax.UI;component/Style/TextBoxStyle.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+</ResourceDictionary>

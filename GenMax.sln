@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33723.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GenMax", "GenMax\GenMax.csproj", "{9C7D6208-60A1-4385-A96A-FA300FD4F017}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SharedLibraries", "SharedLibraries", "{52B9AEEB-5E57-4D1A-A6FB-5F4B48E27C6B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GenMax.UI", "SharedLibraries\GenMax.UI\GenMax.UI.csproj", "{BC620C20-35CC-408E-AEBD-EEF856AAAD5C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GenMax.Log", "SharedLibraries\GenMax.Log\GenMax.Log.csproj", "{EC325732-A688-4666-BE47-480938EC633F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GenMax.Database", "SharedLibraries\GenMax.Database\GenMax.Database.csproj", "{04F4F7D9-34D0-4696-8B0C-43953991EE62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenMax.Common", "SharedLibraries\GenMax.Common\GenMax.Common.csproj", "{840402FE-04D0-4D28-9EA0-38CA0CF4BB8F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9C7D6208-60A1-4385-A96A-FA300FD4F017}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C7D6208-60A1-4385-A96A-FA300FD4F017}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C7D6208-60A1-4385-A96A-FA300FD4F017}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C7D6208-60A1-4385-A96A-FA300FD4F017}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC620C20-35CC-408E-AEBD-EEF856AAAD5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC620C20-35CC-408E-AEBD-EEF856AAAD5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC620C20-35CC-408E-AEBD-EEF856AAAD5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC620C20-35CC-408E-AEBD-EEF856AAAD5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC325732-A688-4666-BE47-480938EC633F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC325732-A688-4666-BE47-480938EC633F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC325732-A688-4666-BE47-480938EC633F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC325732-A688-4666-BE47-480938EC633F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04F4F7D9-34D0-4696-8B0C-43953991EE62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04F4F7D9-34D0-4696-8B0C-43953991EE62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04F4F7D9-34D0-4696-8B0C-43953991EE62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04F4F7D9-34D0-4696-8B0C-43953991EE62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{840402FE-04D0-4D28-9EA0-38CA0CF4BB8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{840402FE-04D0-4D28-9EA0-38CA0CF4BB8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{840402FE-04D0-4D28-9EA0-38CA0CF4BB8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{840402FE-04D0-4D28-9EA0-38CA0CF4BB8F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BC620C20-35CC-408E-AEBD-EEF856AAAD5C} = {52B9AEEB-5E57-4D1A-A6FB-5F4B48E27C6B}
+		{EC325732-A688-4666-BE47-480938EC633F} = {52B9AEEB-5E57-4D1A-A6FB-5F4B48E27C6B}
+		{04F4F7D9-34D0-4696-8B0C-43953991EE62} = {52B9AEEB-5E57-4D1A-A6FB-5F4B48E27C6B}
+		{840402FE-04D0-4D28-9EA0-38CA0CF4BB8F} = {52B9AEEB-5E57-4D1A-A6FB-5F4B48E27C6B}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {413F285D-1321-4BDA-A883-1BD44C97B8D2}
+	EndGlobalSection
+EndGlobal

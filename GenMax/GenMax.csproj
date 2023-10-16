@@ -1,0 +1,60 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net6.0-windows</TargetFramework>
+        <Nullable>enable</Nullable>
+        <UseWPF>true</UseWPF>
+        <ApplicationIcon>Resource\logo.ico</ApplicationIcon>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\SharedLibraries\GenMax.Database\GenMax.Database.csproj" />
+      <ProjectReference Include="..\SharedLibraries\GenMax.Log\GenMax.Log.csproj" />
+      <ProjectReference Include="..\SharedLibraries\GenMax.UI\GenMax.UI.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.1" />
+      <PackageReference Include="MahApps.Metro" Version="2.4.10" />
+      <PackageReference Include="MahApps.Metro.IconPacks" Version="4.11.0" />
+      <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
+      <PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.1" />
+      <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+      <PackageReference Include="NPOI" Version="2.6.2" />
+      <PackageReference Include="OxyPlot.Wpf" Version="2.1.2" />
+      <PackageReference Include="Panuon.WPF.UI" Version="1.1.15.14" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Resource\Image\Abandonedbox.png" />
+      <None Remove="Resource\Image\bg_chipsnumber.png" />
+      <None Remove="Resource\Image\bg_SealStatus.png" />
+      <None Remove="Resource\Image\loginImage.jpg" />
+      <None Remove="Resource\Image\Status_free.png" />
+      <None Remove="Resource\logo.ico" />
+      <Resource Include="Resource\Image\Abandonedbox.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Resource>
+      <Resource Include="Resource\Image\bg_chipsnumber.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Resource>
+      <Resource Include="Resource\Image\bg_SealStatus.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Resource>
+      <Resource Include="Resource\Image\loginImage.jpg">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Resource>
+      <Resource Include="Resource\Image\Status_free.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Resource>
+      <Resource Include="Resource\logo.ico">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Resource>
+      <None Remove="Resource\logo.png" />
+      <Resource Include="Resource\logo.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Resource>
+    </ItemGroup>
+
+</Project>
